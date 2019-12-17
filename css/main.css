@@ -1,0 +1,73 @@
+canvas  {
+    max-width: 100%;
+    height: auto !important;
+    /*background-color: lightblue;*/
+    margin-top: 5%;
+    margin-left: 5%;
+    }
+
+
+/*home*/
+
+#welcome {
+    height: 100vh;
+    width: 100vw; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#article {
+    margin-top: 100vh;
+    position: absolute;
+    height: 100vh;
+    background-color: rgb(255, 239, 185);
+}
+
+#mapLegend {
+    position: absolute;
+    width: 30%;
+    height: 70vh;
+    background-color: rgb(139, 180, 255);
+   margin: 6%;
+   right: 1%;
+   
+}
+
+#videoDiv-2 {
+    padding: 5%;
+    width: 40%;
+}
+
+#videoOverlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: white;
+    position: absolute;
+}
+
+#videoDiv {
+   width: 100%;
+   top: 0px;
+}
+
+/*pedestrians*/
+#pedestrians {
+    height: 100vh;
+    width: 100vw; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+/*cyclists*/
+#cyclists {
+    height: 100vh;
+    width: 100vw; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
