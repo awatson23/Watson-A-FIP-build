@@ -16,19 +16,17 @@ function setup() {
     slider.style('width', '350px');
 }
 
-
-
 function draw() {
    drawCyclists();
    drawPedestrians();
 }
 
 function drawCyclists() {
-    fill(255,65,0,120);
+    fill(255,115,0,120);
     image(img, 0, 0);
     let sliderVal = slider.value();
     //console.log(sliderVal)
-    scale(590);
+    scale(578);
     translate(-267.64,-150.47)
     
 
@@ -50,7 +48,7 @@ function drawCyclists() {
 }
 
 function drawPedestrians() {
-    fill(0,65,255,120);
+    fill(0,100,255,120);
     let sliderVal = slider.value();
 
     //console.log(sliderVal)
