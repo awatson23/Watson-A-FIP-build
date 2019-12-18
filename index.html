@@ -6,28 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
     <script src="js/p5.min.js"></script>
     <title>Toronto Cyclist and pedestrian data</title>
 </head>
 <body>
-    <section id="welcome">   
+    <section id="welcome">  
+      <h2 class="hidden">GTA data intro video</h2>
         <div id="videoDiv">
           <video width="100%" autoplay muted>
             <source src="assets/toronto-intro.mp4" type="video/mp4">
           </video> 
         </div>
-        <div id="arrow"><img src="assets/one-way.svg"></div>
-      </section>
-      <section id="mapLegend">
-        
+        <a href="#article" id="arrow"><img alt="down arrow" src="assets/one-way.svg"></a>
       </section>
       <section id="article">   
+        <h2 class="hidden">GTA data informative video and article</h2>
         <div id="videoDiv-2">
           <video width="100%" controls>
             <source src="assets/info-video.mp4" type="video/mp4">
           </video> 
         </div>
+        <div id="articleBox">
+          <h3>The future of Torontos bike path infrastructure may be accounted for, but <strong>what about pedestrians</strong>?</h3>
+          <p>The accident report count for pedestrians is staggeringly high in comparison to cyclists, and the data suggests there 
+            is a certain lack of carefully studied, safe crosswalks across busy roads.</p>
+            <h4><strong>What's next?</strong> How about a Toronto Pedestrian Safety Plan.</h4>
+          <div id="chartsJS">
+              <canvas id="doughnut-chart"></canvas>
+          </div>
+        </div>
+        <a href="#map" id="arrow2"><img alt="down arrow" src="assets/down-arrow.svg"></a>
       </section>
+      <section id="map">
+        <h2 class="hidden">Map section</h2>
+      <div id="mapLegend">
+        <h3 id="mapTitle"><strong>GTA</strong> pedestrian and cyclist accidents <strong>(2008-2018)</strong></h3>
+        <div id="legend">
+          <h2>Legend</h2>
+          <div class="circleId"><div id="circle1"></div><p>Pedestrians (4,973)</p></div>
+          <div class="circleId"><div id="circle2"></div><p>Cyclists<br>(1,318)</p></div>
+      </div>
+      <div id="mapText"><p>When the accident report data is mapped,
+        we can observe that there is a cluster of incidents occuring in
+        the <strong>downtown</strong> region of the GTA, and pedestrians accidents
+        are more widespread and frequent against cyclist accidents.</p>
+       </div>
+    </div>
+  </section>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+        <script src="js/charts.js"></script>
         <script src="js/p5main.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/TweenMax.min.js"></script>   
@@ -35,5 +64,6 @@
         <script src="js/animation.gsap.min.js"></script>
         <script src="js/jquery.ScrollMagic.min.js"></script>
         <script src="js/scrollmagicFunctions.js"></script>
+      
 </body>
 </html>

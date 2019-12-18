@@ -5,15 +5,15 @@ var img;
 function preload() {
     cyclists = loadTable("data/cyclists-clean.csv","header");
     pedestrians = loadTable("data/pedestrians-clean.csv","header");
-    img = loadImage('assets/toronto-map.jpg');
+    img = loadImage('assets/toronto-map.png');
 }
 
 function setup() {
     createCanvas(960, 587);
     noStroke();
-    slider = createSlider(0.1, 1.5, 0.3, 0.0);
-    slider.position(1000, 1270);
-    slider.style('width', '350px');
+    slider = createSlider(0.1, .8, 0.3, 0.0);
+    slider.position(80, 1550);
+    slider.style('width', '200px');
 }
 
 function draw() {
@@ -26,7 +26,7 @@ function drawCyclists() {
     image(img, 0, 0);
     let sliderVal = slider.value();
     //console.log(sliderVal)
-    scale(578);
+    scale(570);
     translate(-267.64,-150.47)
     
 
@@ -66,4 +66,5 @@ function drawPedestrians() {
         var y = map(lat,90, -90,0,height);
         ellipse(x,y,.025*sliderVal, .025*sliderVal, 70);
    }
+
 }
